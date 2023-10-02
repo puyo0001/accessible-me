@@ -27,6 +27,10 @@ h3 {
   font-size: 1.25rem;
 }
 
+/* a {
+add focus state bla bla bla
+} */
+
 .container {
   max-width: 1080px;
   margin: 0 auto;
