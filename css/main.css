@@ -1,7 +1,7 @@
 body {
   font-family: 'Roboto', Helvetica, sans-serif;
   line-height: 1.4;
-  background-color: rgb(219, 219, 219);
+  background-color: #F2F3F5;
   margin: 0;
   padding: 0;
 }
@@ -27,9 +27,6 @@ h3 {
   font-size: 1.25rem;
 }
 
-/* a {
-add focus state bla bla bla
-} */
 
 .container {
   max-width: 1080px;
@@ -41,12 +38,32 @@ img {
   width: 100%;
 }
 
+.skip-links{
+  list-style: none;
+}
+
+.skip-links a {
+  padding-bottom: .5rem 1rem;
+  position: absolute;
+  top: -3rem;
+  /* background-color: black; */
+  color: white;
+  font-weight: bold;
+}
+
+.skip-links a:focus {
+  top: 0;
+  color: #fff;
+  background-color: black;
+}
+
+
 .main-nav ul {
   list-style: none;
   display: flex;
   flex-wrap: wrap;
   margin: 0;
-  padding: 0;
+  padding: 1rem;
 }
 
 .main-nav ul li {
@@ -60,6 +77,16 @@ img {
   text-decoration: none;
   font-size: 1.25rem;
 }
+
+.main-nav ul li a:hover, 
+.main-nav ul li a:focus {
+  color:#fff;
+  background-color: black;
+}
+
+
+
+
 
 form input,
 form textarea {
