@@ -14,7 +14,7 @@
 
 <body>
 
-  <div class="container">
+  <div id="top" class="container">
 
     <ul class="skip-links">
       <li><a href="#nav">Skip to main nav</a></li>
@@ -23,7 +23,9 @@
     </ul>
 
     <header class="site-header">
+
       <h1>Jam Box Studios</h1>
+
       <nav id="nav" class="main-nav">
         <ul>
           <li><a href="#">Home</a></li>
@@ -32,7 +34,9 @@
           <li><a href="#">Studio</a></li>
         </ul>
       </nav>
+
       <img src="https://placekitten.com/1200/900" class="banner">
+
     </header>
 
     <main id="main" class="main-content">
@@ -43,27 +47,28 @@
 
       <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Veniam perferendis expedita sed itaque odit ipsam omnis, eos voluptates magni fugit culpa voluptatibus, inventore eaque, eligendi voluptatum! Voluptate iusto error voluptatibus.</p>
 
-      <div class="owner">
+      <article class="owner">
 
         <h3>Meet the owner</h3>
 
-        <ul>
-          <li>Name: John Doe</li>
-          <li>Title: CEO</li>
-          <li>Email: johnjoe@jambox.ca</li>
-          <li>Phone: 613-000-0000</li>
+        <ul itemscope itemtype="https://schema.org/Person">
+          <li itemprop="givenName">Name: John Doe</li>
+          <li itemprop="jobTitle">Title: CEO</li>
+          <li itemprop="email">Email: johnjoe@jambox.ca</li>
+          <li itemprop="telephone">Phone: 613-000-0000</li>
         </ul>
 
         <h3>Address</h3>
 
-        <p>
-          Jambox Studios
-          123 Guitar Road,
-          Musicville, Danceistan
-          B3T 0L0
+        <p itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
+          <span itemprop="">Jambox Studios</span>
+          <span itemprop="streetAddress">123 Guitar Road,</span>
+          <span itemprop="addressRegion">Musicville,</span>
+          <span itemprop="addressCountry">Danceistan</span>
+          <span itemprop="postalCode">B3T 0L0</span>
         </p>
 
-      </div>
+      </article>
 
       <div id="contact" class="contact-section">
 
@@ -84,7 +89,7 @@
     </main>
 
     <footer class="site-footer">
-      &copy; 2021 Jam Box Studios
+      &copy; 2021 Jam Box Studios <a href="#top">Back to Top</a>
     </footer>
 
   </div>
